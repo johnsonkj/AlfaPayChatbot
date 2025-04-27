@@ -11,9 +11,11 @@ public static class KeyManager
         if (!_isLoaded)
         {
             string apiKeyPath = Path.Combine(Application.streamingAssetsPath, "openai_key.txt");
+            Debug.Log("API Key path: " + apiKeyPath); // Debugging line
             if (File.Exists(apiKeyPath))
             {
                 _apiKey = File.ReadAllText(apiKeyPath).Trim();
+                Debug.Log("Api key" + _apiKey);
                 _isLoaded = true;
             }
             else

@@ -12,12 +12,13 @@ public class OpenAISTT : MonoBehaviour
     public GPTQuery gptQuery;
 
     [Header("OpenAI Settings")]
-    public string openAIKey = KeyManager.GetApiKey();
+    public string openAIKey;
     public string whisperModel = "whisper-1";
     public TextMeshProUGUI recognizedSpeech;
 
     void Awake()
     {
+        openAIKey = KeyManager.GetApiKey();
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
     }

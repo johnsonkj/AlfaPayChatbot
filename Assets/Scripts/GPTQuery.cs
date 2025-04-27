@@ -8,7 +8,7 @@ using TMPro;
 
 public class GPTQuery : MonoBehaviour
 {
-    public string openAIKey = KeyManager.GetApiKey();
+    public string openAIKey;
     public OpenAITTS tts;
     public TextMeshProUGUI GPTanswer;
     public TextMeshProUGUI gptanswerTextPad;
@@ -25,7 +25,10 @@ public class GPTQuery : MonoBehaviour
         { "what more can i do with alfapay", "AlfaPay goes beyond money transfers..." },
     };
 
-    
+    private void Awake()
+    {
+        openAIKey = KeyManager.GetApiKey();
+    }
     public void AskQuestionInEnglish(string englishQuestion)
     {
         string userLanguageCode = LanguageSelector.selectedLanguageCode;

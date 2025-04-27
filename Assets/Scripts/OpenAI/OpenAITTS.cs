@@ -9,7 +9,7 @@ public class OpenAITTS : MonoBehaviour
     public static OpenAITTS Instance;
 
     [Header("OpenAI Settings")]
-    public string openAIKey = KeyManager.GetApiKey();
+    public string openAIKey;
     public AudioSource audioSource;
 
     // OpenAI tts-1 model voices
@@ -32,6 +32,7 @@ public class OpenAITTS : MonoBehaviour
 
     void Awake()
     {
+        openAIKey = KeyManager.GetApiKey();
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
 
