@@ -27,7 +27,8 @@ public class GPTQuery : MonoBehaviour
 
     private void Awake()
     {
-        openAIKey = KeyManager.GetApiKey();
+        //openAIKey = KeyManager.GetApiKey();
+        openAIKey = "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";
     }
     public void AskQuestionInEnglish(string englishQuestion)
     {

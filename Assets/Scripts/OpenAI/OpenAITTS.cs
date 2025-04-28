@@ -3,7 +3,6 @@ using System.Collections;
 using UnityEngine.Networking;
 using System.IO;
 using System.Collections.Generic;
-
 public class OpenAITTS : MonoBehaviour
 {
     public static OpenAITTS Instance;
@@ -28,11 +27,12 @@ public class OpenAITTS : MonoBehaviour
         public string model;
         public string input;
         public string voice;
+        public string response_format;
     }
 
     void Awake()
     {
-        openAIKey = KeyManager.GetApiKey();
+        openAIKey = "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";
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
 
@@ -58,7 +58,8 @@ public class OpenAITTS : MonoBehaviour
         {
             model = "tts-1",
             input = inputText,
-            voice = voice
+            voice = voice,
+            response_format = "mp3"
         };
 
         string jsonBody = JsonUtility.ToJson(ttsRequest);
@@ -82,12 +83,31 @@ public class OpenAITTS : MonoBehaviour
             {
                 Debug.Log("TTS audio received");
                 byte[] mp3Data = www.downloadHandler.data;
-                StartCoroutine(PlayMp3(mp3Data));
+
+#if UNITY_WEBGL && !UNITY_EDITOR
+                    PlayAudioInWebGL(mp3Data);
+#else
+                StartCoroutine(PlayMp3Fallback(mp3Data));
+#endif
             }
         }
     }
 
-    IEnumerator PlayMp3(byte[] data)
+#if UNITY_WEBGL && !UNITY_EDITOR
+    // WebGL specific method using JavaScript interop
+    void PlayAudioInWebGL(byte[] audioData)
+    {
+        string base64Audio = System.Convert.ToBase64String(audioData);
+        PlayAudioFromBase64JS(base64Audio);
+    }
+
+    // JavaScript function to play audio in browser
+    [System.Runtime.InteropServices.DllImport("__Internal")]
+    private static extern void PlayAudioFromBase64JS(string base64Data);
+#endif
+
+    // Fallback method for Android/iOS/Desktop
+    IEnumerator PlayMp3Fallback(byte[] data)
     {
         string tempPath = Path.Combine(Application.persistentDataPath, "speech.mp3");
         File.WriteAllBytes(tempPath, data);
