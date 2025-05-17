@@ -13,65 +13,36 @@ public class GPTQuery : MonoBehaviour
     public TextMeshProUGUI GPTanswer;
     public TextMeshProUGUI gptanswerTextPad;
 
-    [TextArea(5, 15)]
+    [TextArea(15, 30)]
     public string predefinedContent = ""; // All predefined content pasted here
-
-    private Dictionary<string, string> predefinedQnA = new Dictionary<string, string>()
-    {
-        { "tell me about alfapay", "AlfaPay is Al Fardan Exchange’s exclusive all-in-one digital financial app..." },
-        { "tell me about yourself", "Think of me as your smart assistant..." },
-        { "how can i send money with alfapay", "Sending money with AlfaPay is simple..." },
-        { "can i send money to any country", "Yes! AlfaPay lets you send money to over 190 countries..." },
-        { "what more can i do with alfapay", "AlfaPay goes beyond money transfers..." },
-    };
 
     private void Awake()
     {
         //openAIKey = KeyManager.GetApiKey();
         openAIKey = "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";
     }
-    public void AskQuestionInEnglish(string englishQuestion)
+
+    public void AskQuestion(string question)
     {
         string userLanguageCode = LanguageSelector.selectedLanguageCode;
-        string match = FindPredefinedAnswer(englishQuestion.ToLower());
-        Debug.Log("The language selected by user for GPT Query is " + GetLanguageName(userLanguageCode));
-        if (!string.IsNullOrEmpty(match))
-        {
+        Debug.Log($"Processing question in {GetLanguageName(userLanguageCode)}: {question}");
 
-            // Ask GPT to just translate it
-            string prompt = $"Translate the following answer to {GetLanguageName(userLanguageCode)}:\n\n{match}";
-            StartCoroutine(SendToGPT(prompt));
-        }
-        else
-        {
-            string prompt = $@"
-You are a helpful assistant. Your task is to understand the meaning of the user's question and see if the answer exists in the provided content, even if the wording is different.
+        // Simple prompt for GPT to find answer in the predefined content
+        string prompt = $@"
+You are a helpful assistant for AlfaPay, a financial app by Al Fardan Exchange. 
 
-1. If the content already contains an answer that matches the meaning of the question, return **that answer**.
-2. If the answer is not in the content, use your own knowledge to answer the question.
-3. Return the answer translated into {GetLanguageName(userLanguageCode)}.
+TASK:
+1. The user has asked: {question}
+2.Check if an answer exists in the predefined content below.
+3.If you find an answer in the section for { GetLanguageName(userLanguageCode)}, respond with EXACTLY that answer.
+4.If you don't find a match in {GetLanguageName(userLanguageCode)} but find it in ENGLISH, translate the English answer to {GetLanguageName(userLanguageCode)}.
+5.If no answer exists in any language section, briefly answer based on your knowledge of financial apps.
+6.Respond ONLY in { GetLanguageName(userLanguageCode)}.
+7.Do not include phrases like Based on the content or explain your process.
 
-Question: {englishQuestion}
+PREDEFINED CONTENT: {predefinedContent} ";
 
-Predefined Content:
-{predefinedContent}
-
-Answer:";
-
-
-
-            StartCoroutine(SendToGPT(prompt));
-        }
-    }
-
-    string FindPredefinedAnswer(string question)
-    {
-        foreach (var entry in predefinedQnA)
-        {
-            if (question.Contains(entry.Key.ToLower()))
-                return entry.Value;
-        }
-        return null;
+        StartCoroutine(SendToGPT(prompt));
     }
 
     IEnumerator SendToGPT(string prompt)
@@ -81,15 +52,15 @@ Answer:";
         JObject jsonBody = new JObject
         {
             ["model"] = "gpt-4",
-            ["temperature"] = 0.7,
+            ["temperature"] = 0.2, // Lower temperature for more deterministic responses
             ["messages"] = new JArray
-        {
-            new JObject
             {
-                ["role"] = "user",
-                ["content"] = prompt
+                new JObject
+                {
+                    ["role"] = "user",
+                    ["content"] = prompt
+                }
             }
-        }
         };
 
         byte[] bodyRaw = Encoding.UTF8.GetBytes(jsonBody.ToString());
@@ -117,9 +88,6 @@ Answer:";
         }
     }
 
-
-
-
     string ExtractReply(string json)
     {
         try
@@ -133,7 +101,6 @@ Answer:";
         }
     }
 
-
     string GetLanguageName(string code)
     {
         switch (code)
@@ -142,6 +109,7 @@ Answer:";
             case "ar": return "Arabic";
             case "zh": return "Mandarin";
             case "ru": return "Russian";
+            case "fr": return "French";
             case "en":
             default: return "English";
         }

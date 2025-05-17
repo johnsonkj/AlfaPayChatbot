@@ -10,12 +10,13 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI gptAnswer;
     public TextMeshProUGUI speechOutput;
     public TextMeshProUGUI gptAnswerTextpad;
+    public AudioSource audioSource;
 
     public void SubmitToGPTQuery()
     {
         if (!string.IsNullOrEmpty(inputField.text))
         {
-            gptQuery.AskQuestionInEnglish(inputField.text);
+            gptQuery.AskQuestion(inputField.text);
             Debug.Log("Submitted following question : " + inputField.text + " to GPT");
         }
         else
@@ -29,6 +30,14 @@ public class UIManager : MonoBehaviour
         gptAnswer.text = "";
         speechOutput.text = "";
         gptAnswerTextpad.text = "";
+    }
+
+    public void StopAudio()
+    {
+        if (audioSource != null && audioSource.isPlaying)
+        {
+            audioSource.Stop();
+        }
     }
 
 }

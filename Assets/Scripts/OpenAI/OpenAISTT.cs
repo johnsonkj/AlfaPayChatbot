@@ -84,7 +84,7 @@ public class OpenAISTT : MonoBehaviour
                 OnTranscriptionComplete?.Invoke(transcript);
 
                 // Send to GPT for processing
-                gptQuery.AskQuestionInEnglish(transcript);
+                gptQuery.AskQuestion(transcript);
             }
         }
     }

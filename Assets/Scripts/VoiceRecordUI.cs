@@ -12,6 +12,7 @@ public class VoiceRecordUI : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
     public RectTransform micButton;
     public TextMeshProUGUI timerText;
     public TextMeshProUGUI slideToCancelText;
+    public TextMeshProUGUI GPTanswer;
     public AudioSource audioSource;
 
     private float holdTime;
@@ -105,7 +106,7 @@ public class VoiceRecordUI : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
         {
             OpenAISTT.Instance.recognizedSpeech.text = "";
         }
-
+        GPTanswer.text = "";
         micButton.LeanScale(Vector3.one * 1.4f, 0.2f).setEaseOutBack();
         timerText.gameObject.SetActive(true);
         slideToCancelText.gameObject.SetActive(true);

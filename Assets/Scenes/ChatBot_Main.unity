@@ -170,12 +170,180 @@ MonoBehaviour:
   tts: {fileID: 246351219}
   GPTanswer: {fileID: 2088463693}
   gptanswerTextPad: {fileID: 1128017297}
-  predefinedContent: "tell me about alfapay ?\nAlfaPay is Al Fardan Exchange\u2019s
-    exclusive all-in-one digital financial app.\n\ntell me about yourself?\nThink
-    of me as your smart assistant...\n\nhow can i send money with alfapay?\nSending
-    money with AlfaPay is simple...\n\ncan i send money to any country?\nYes! AlfaPay
-    lets you send money to over 190 countries...\n\nwhat more can i do with alfapay?\nAlfaPay
-    goes beyond money transfers..."
+  predefinedContent: "Tell me about AlfaPay\r\n  AlfaPay is Al Fardan Exchange\u2019s
+    exclusive all-in-one digital financial app, designed to make sending money, managing
+    payments, and accessing financial services simple, secure, and fast. From transferring
+    funds and paying bills to tracking your transactions, AlfaPay puts everything
+    you need in one easy-to-use platform. \r\n\r\nTell me about yourself \r\nThink
+    of me as your smart assistant, always on, always ready. I am here 24/7 to help
+    you send money, check exchange rates, answer your questions, and guide you through
+    everything AlfaPay has to offer. I speak over 50 languages to make sure you feel
+    understood every step of the way \r\n\r\nHow can I send money with AlfaPay? \r\nSending
+    money with AlfaPay is simple. Just open the app, select your destination country,
+    enter the amount, choose beneficiary and select your preferred payment mode.
+    Your money moves instantly, safely and reliably. \r\n\r\nCan I send money to
+    any country? Yes! AlfaPay lets you send money to over 190 countries, straight
+    to bank accounts, mobile wallets, or cash pickup locations. \r\n\r\nWhat more
+    can I do with AlfaPay? \r\nAlfaPay goes beyond money transfers. You can pay bills,
+    monitor every transaction in real time, manage your Travelez & WPS cards. AlfaPay
+    has a range of products and services designed to make your financial life simpler
+    and smarter.\r\n\r\nParlez-moi d'AlfaPay\r\nAlfaPay est l'application financi\xE8re
+    num\xE9rique tout-en-un exclusive d'Al Fardan Exchange, con\xE7ue pour rendre
+    l'envoi d'argent, la gestion des paiements et l'acc\xE8s aux services financiers
+    simples, s\xE9curis\xE9s et rapides. De l'envoi de fonds au paiement des factures
+    en passant par le suivi de vos transactions, AlfaPay regroupe tout ce dont vous
+    avez besoin sur une seule plateforme facile \xE0 utiliser.\r\nParlez-moi de vous\r\nConsid\xE9rez-moi
+    comme votre assistant intelligent, toujours actif, toujours pr\xEAt. Je suis
+    l\xE0 24h/24 et 7j/7 pour vous aider \xE0 envoyer de l'argent, v\xE9rifier les
+    taux de change, r\xE9pondre \xE0 vos questions et vous guider \xE0 travers tout
+    ce qu'AlfaPay a \xE0 offrir. Je parle plus de 50 langues pour m'assurer que vous
+    vous sentiez compris \xE0 chaque \xE9tape.\r\nComment puis-je envoyer de l'argent
+    avec AlfaPay ?\r\nEnvoyer de l'argent avec AlfaPay est simple. Il vous suffit
+    d'ouvrir l'application, de s\xE9lectionner le pays de destination, d'entrer le
+    montant, de choisir le b\xE9n\xE9ficiaire et de s\xE9lectionner votre mode de
+    paiement pr\xE9f\xE9r\xE9. Votre argent se d\xE9place instantan\xE9ment, en toute
+    s\xE9curit\xE9 et fiabilit\xE9.\r\nPuis-je envoyer de l'argent vers n'importe
+    quel pays ?\r\nOui ! AlfaPay vous permet d'envoyer de l'argent vers plus de 190
+    pays, directement vers des comptes bancaires, des portefeuilles mobiles ou des
+    points de retrait en esp\xE8ces.\r\nQue puis-je faire de plus avec AlfaPay ?\r\nAlfaPay
+    va au-del\xE0 des transferts d'argent. Vous pouvez payer vos factures, suivre
+    chaque transaction en temps r\xE9el, g\xE9rer vos cartes Travelez et WPS. AlfaPay
+    propose une gamme de produits et de services con\xE7us pour rendre votre vie
+    financi\xE8re plus simple et plus intelligente.\r\nAlfaPay \u0915\u0947 \u092C\u093E\u0930\u0947
+    \u092E\u0947\u0902 \u092C\u0924\u093E\u0907\u090F\r\nAlfaPay, Al Fardan Exchange
+    \u0915\u093E \u090F\u0915 \u0916\u093E\u0938 \u0921\u093F\u091C\u093F\u091F\u0932
+    \u092B\u093E\u0907\u0928\u0947\u0902\u0936\u093F\u092F\u0932 \u0910\u092A \u0939\u0948,
+    \u091C\u094B \u092A\u0948\u0938\u0947 \u092D\u0947\u091C\u0928\u0947, \u092A\u0947\u092E\u0947\u0902\u091F\u094D\u0938
+    \u0915\u094B \u092E\u0948\u0928\u0947\u091C \u0915\u0930\u0928\u0947 \u0914\u0930
+    \u092B\u093E\u0907\u0928\u0947\u0902\u0936\u093F\u092F\u0932 \u0938\u0930\u094D\u0935\u093F\u0938\u0947\u091C\u093C
+    \u0915\u093E \u0907\u0938\u094D\u0924\u0947\u092E\u093E\u0932 \u0915\u0930\u0928\u093E
+    \u092C\u0939\u0941\u0924 \u0906\u0938\u093E\u0928, \u0938\u0941\u0930\u0915\u094D\u0937\u093F\u0924
+    \u0914\u0930 \u0924\u0947\u091C\u093C \u092C\u0928\u093E\u0924\u093E \u0939\u0948\u0964
+    \u092A\u0948\u0938\u0947 \u091F\u094D\u0930\u093E\u0902\u0938\u092B\u0930 \u0915\u0930\u0928\u0947
+    \u0938\u0947 \u0932\u0947\u0915\u0930 \u092C\u093F\u0932 \u092A\u0947\u092E\u0947\u0902\u091F
+    \u0914\u0930 \u091F\u094D\u0930\u093E\u0902\u091C\u0948\u0915\u094D\u0936\u0928\u094D\u0938
+    \u0915\u094B \u091F\u094D\u0930\u0948\u0915 \u0915\u0930\u0928\u0947 \u0924\u0915,
+    AlfaPay \u0906\u092A\u0915\u0947 \u0938\u093E\u0930\u0947 \u0915\u093E\u092E
+    \u090F\u0915 \u0939\u0940 \u0910\u092A \u092E\u0947\u0902 \u0915\u0930 \u0938\u0915\u0924\u093E
+    \u0939\u0948\u0964\r\n\u0905\u092A\u0928\u0947 \u092C\u093E\u0930\u0947 \u092E\u0947\u0902
+    \u092C\u0924\u093E\u0907\u090F\r\n\u0938\u092E\u091D\u093F\u090F \u092E\u0948\u0902
+    \u0906\u092A\u0915\u093E \u0938\u094D\u092E\u093E\u0930\u094D\u091F \u0905\u0938\u093F\u0938\u094D\u091F\u0947\u0902\u091F
+    \u0939\u0942\u0902, \u0939\u092E\u0947\u0936\u093E \u0911\u0928 \u0914\u0930
+    \u0924\u0948\u092F\u093E\u0930\u0964 \u092E\u0948\u0902 24/7 \u092F\u0939\u093E\u0901
+    \u0939\u0942\u0902 \u0924\u093E\u0915\u093F \u0906\u092A \u092A\u0948\u0938\u0947
+    \u092D\u0947\u091C \u0938\u0915\u0947\u0902, \u090F\u0915\u094D\u0938\u091A\u0947\u0902\u091C
+    \u0930\u0947\u091F \u091A\u0947\u0915 \u0915\u0930 \u0938\u0915\u0947\u0902,
+    \u0938\u0935\u093E\u0932\u094B\u0902 \u0915\u0947 \u091C\u0935\u093E\u092C \u092A\u093E
+    \u0938\u0915\u0947\u0902, \u0914\u0930 AlfaPay \u0915\u0947 \u0938\u093E\u0930\u0947
+    \u092B\u0940\u091A\u0930\u094D\u0938 \u0915\u094B \u0938\u092E\u091D \u0938\u0915\u0947\u0902\u0964
+    \u092E\u0948\u0902 50 \u0938\u0947 \u091C\u093C\u094D\u092F\u093E\u0926\u093E
+    \u092D\u093E\u0937\u093E\u0913\u0902 \u092E\u0947\u0902 \u092C\u093E\u0924 \u0915\u0930
+    \u0938\u0915\u0924\u093E \u0939\u0942\u0902 \u0924\u093E\u0915\u093F \u0906\u092A\u0915\u094B
+    \u0939\u0930 \u0915\u0926\u092E \u092A\u0930 \u0906\u0938\u093E\u0928\u0940 \u0938\u0947
+    \u0938\u092E\u091D \u0906 \u0938\u0915\u0947\u0964\r\nAlfaPay \u0938\u0947 \u092A\u0948\u0938\u0947
+    \u0915\u0948\u0938\u0947 \u092D\u0947\u091C\u0947\u0902?\r\nAlfaPay \u0938\u0947
+    \u092A\u0948\u0938\u0947 \u092D\u0947\u091C\u0928\u093E \u092C\u0939\u0941\u0924
+    \u0906\u0938\u093E\u0928 \u0939\u0948\u0964 \u092C\u0938 \u0910\u092A \u0916\u094B\u0932\u093F\u090F,
+    \u0905\u092A\u0928\u0947 \u0917\u0902\u0924\u0935\u094D\u092F \u0926\u0947\u0936
+    \u0915\u094B \u091A\u0941\u0928\u093F\u090F, \u0930\u093E\u0936\u093F \u0921\u093E\u0932\u093F\u090F,
+    \u0932\u093E\u092D\u093E\u0930\u094D\u0925\u0940 \u0915\u094B \u091A\u0941\u0928\u093F\u090F
+    \u0914\u0930 \u0905\u092A\u0928\u0940 \u092A\u0938\u0902\u0926\u0940\u0926\u093E
+    \u092A\u0947\u092E\u0947\u0902\u091F \u092E\u094B\u0921 \u0938\u0947 \u092A\u0947\u092E\u0947\u0902\u091F
+    \u0915\u0930 \u0926\u0940\u091C\u093F\u090F\u0964 \u0906\u092A\u0915\u093E \u092A\u0948\u0938\u093E
+    \u0924\u0941\u0930\u0902\u0924, \u0938\u0941\u0930\u0915\u094D\u0937\u093F\u0924
+    \u0914\u0930 \u0935\u093F\u0936\u094D\u0935\u0938\u0928\u0940\u092F \u0924\u0930\u0940\u0915\u0947
+    \u0938\u0947 \u092D\u0947\u091C\u093E \u091C\u093E\u090F\u0917\u093E\u0964\r\n\u0915\u094D\u092F\u093E
+    \u092E\u0948\u0902 \u0915\u093F\u0938\u0940 \u092D\u0940 \u0926\u0947\u0936 \u092E\u0947\u0902
+    \u092A\u0948\u0938\u0947 \u092D\u0947\u091C \u0938\u0915\u0924\u093E \u0939\u0942\u0902?\r\n\u0939\u093E\u0902!
+    AlfaPay \u0938\u0947 \u0906\u092A 190 \u0938\u0947 \u091C\u094D\u092F\u093E\u0926\u093E
+    \u0926\u0947\u0936\u094B\u0902 \u092E\u0947\u0902 \u092A\u0948\u0938\u0947 \u092D\u0947\u091C
+    \u0938\u0915\u0924\u0947 \u0939\u0948\u0902, \u0938\u0940\u0927\u0947 \u092C\u0948\u0902\u0915
+    \u0905\u0915\u093E\u0909\u0902\u091F\u094D\u0938, \u092E\u094B\u092C\u093E\u0907\u0932
+    \u0935\u0949\u0932\u0947\u091F\u094D\u0938 \u092F\u093E \u0915\u0948\u0936 \u092A\u093F\u0915\u0905\u092A
+    \u0932\u094B\u0915\u0947\u0936\u0928\u094D\u0938 \u092A\u0930\u0964\r\nAlfaPay
+    \u0938\u0947 \u0914\u0930 \u0915\u094D\u092F\u093E \u0915\u0930 \u0938\u0915\u0924\u093E
+    \u0939\u0942\u0902?\r\nAlfaPay \u0938\u093F\u0930\u094D\u092B \u092A\u0948\u0938\u0947
+    \u091F\u094D\u0930\u093E\u0902\u0938\u092B\u0930 \u0924\u0915 \u0938\u0940\u092E\u093F\u0924
+    \u0928\u0939\u0940\u0902 \u0939\u0948\u0964 \u0906\u092A \u092C\u093F\u0932 \u092A\u0947\u092E\u0947\u0902\u091F
+    \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902, \u0939\u0930 \u091F\u094D\u0930\u093E\u0902\u091C\u0948\u0915\u094D\u0936\u0928
+    \u0915\u094B \u0930\u093F\u092F\u0932 \u091F\u093E\u0907\u092E \u092E\u0947\u0902
+    \u091F\u094D\u0930\u0948\u0915 \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902,
+    \u0914\u0930 \u0905\u092A\u0928\u0947 Travelez & WPS \u0915\u093E\u0930\u094D\u0921\u094D\u0938
+    \u0915\u094B \u092E\u0948\u0928\u0947\u091C \u0915\u0930 \u0938\u0915\u0924\u0947
+    \u0939\u0948\u0902\u0964 AlfaPay \u092E\u0947\u0902 \u0910\u0938\u0940 \u0915\u0908
+    \u0938\u0947\u0935\u093E\u090F\u0902 \u0914\u0930 \u092A\u094D\u0930\u094B\u0921\u0915\u094D\u091F\u094D\u0938
+    \u0939\u0948\u0902, \u091C\u094B \u0906\u092A\u0915\u0947 \u092B\u093E\u0907\u0928\u0947\u0902\u0936\u093F\u092F\u0932
+    \u0915\u093E\u092E\u094B\u0902 \u0915\u094B \u0914\u0930 \u092D\u0940 \u0906\u0938\u093E\u0928
+    \u0914\u0930 \u0938\u094D\u092E\u093E\u0930\u094D\u091F \u092C\u0928\u093E\u0924\u0947
+    \u0939\u0948\u0902\u0964\r\n\r\n\u544A\u8BC9\u6211\u5173\u4E8EAlfaPay\u7684\u4E8B
+    AlfaPay\u662FAl Fardan Exchange\u7684\u72EC\u5BB6\u5168\u80FD\u6570\u5B57\u91D1\u878D\u5E94\u7528\uFF0C\u65E8\u5728\u8BA9\u6C47\u6B3E\u3001\u652F\u4ED8\u7BA1\u7406\u548C\u83B7\u53D6\u91D1\u878D\u670D\u52A1\u53D8\u5F97\u7B80\u5355\u3001\u5B89\u5168\u4E14\u5FEB\u6377\u3002\u4ECE\u8F6C\u8D26\u3001\u7F34\u8D39\u5230\u8FFD\u8E2A\u4EA4\u6613\uFF0CAlfaPay\u5C06\u60A8\u6240\u9700\u7684\u4E00\u5207\u6574\u5408\u5728\u4E00\u4E2A\u6613\u4E8E\u4F7F\u7528\u7684\u5E73\u53F0\u4E2D\u3002\r\n\u544A\u8BC9\u6211\u5173\u4E8E\u4F60\u81EA\u5DF1\u7684\u4E8B
+    \u628A\u6211\u5F53\u4F5C\u60A8\u7684\u667A\u80FD\u52A9\u624B\uFF0C\u968F\u65F6\u5728\u7EBF\uFF0C\u968F\u65F6\u51C6\u5907\u597D\u3002\u621124\u5C0F\u65F6\u4E3A\u60A8\u670D\u52A1\uFF0C\u5E2E\u52A9\u60A8\u6C47\u6B3E\u3001\u67E5\u770B\u6C47\u7387\u3001\u56DE\u7B54\u95EE\u9898\u5E76\u6307\u5BFC\u60A8\u4E86\u89E3AlfaPay\u63D0\u4F9B\u7684\u6240\u6709\u529F\u80FD\u3002\u6211\u80FD\u8BB250\u591A\u79CD\u8BED\u8A00\uFF0C\u786E\u4FDD\u60A8\u5728\u4F7F\u7528\u8FC7\u7A0B\u4E2D\u6BCF\u4E00\u6B65\u90FD\u80FD\u5F97\u5230\u7406\u89E3\u3002\r\n\u6211\u5982\u4F55\u4F7F\u7528AlfaPay\u6C47\u6B3E\uFF1F
+    \u4F7F\u7528AlfaPay\u6C47\u6B3E\u975E\u5E38\u7B80\u5355\u3002\u53EA\u9700\u6253\u5F00\u5E94\u7528\uFF0C\u9009\u62E9\u76EE\u7684\u5730\u56FD\u5BB6\uFF0C\u8F93\u5165\u91D1\u989D\uFF0C\u9009\u62E9\u53D7\u76CA\u4EBA\u5E76\u9009\u62E9\u60A8\u559C\u6B22\u7684\u652F\u4ED8\u65B9\u5F0F\u3002\u60A8\u7684\u8D44\u91D1\u5C06\u7ACB\u5373\u3001\u5B89\u5168\u4E14\u53EF\u9760\u5730\u8F6C\u79FB\u3002\r\n\u6211\u80FD\u5411\u4EFB\u4F55\u56FD\u5BB6\u6C47\u6B3E\u5417\uFF1F
+    \u53EF\u4EE5\uFF01AlfaPay\u5141\u8BB8\u60A8\u5411\u8D85\u8FC7190\u4E2A\u56FD\u5BB6\u6C47\u6B3E\uFF0C\u76F4\u63A5\u6C47\u5165\u94F6\u884C\u8D26\u6237\u3001\u624B\u673A\u94B1\u5305\u6216\u73B0\u91D1\u53D6\u6B3E\u70B9\u3002\r\n\u6211\u8FD8\u80FD\u7528AlfaPay\u505A\u4EC0\u4E48\uFF1F
+    AlfaPay\u4E0D\u4EC5\u4EC5\u662F\u6C47\u6B3E\u5DE5\u5177\u3002\u60A8\u53EF\u4EE5\u7F34\u8D39\u3001\u5B9E\u65F6\u76D1\u63A7\u6BCF\u4E00\u7B14\u4EA4\u6613\uFF0C\u7BA1\u7406\u60A8\u7684Travelez\u548CWPS\u5361\u3002AlfaPay\u63D0\u4F9B\u4E00\u7CFB\u5217\u4EA7\u54C1\u548C\u670D\u52A1\uFF0C\u65E8\u5728\u8BA9\u60A8\u7684\u91D1\u878D\u751F\u6D3B\u53D8\u5F97\u66F4\u7B80\u5355\u3001\u66F4\u667A\u80FD\u3002\r\n\r\n\u062D\u062F\u062B\u0646\u064A
+    \u0639\u0646 AlfaPay\r\n\r\nAlfaPay \u0647\u0648 \u0627\u0644\u062A\u0637\u0628\u064A\u0642
+    \u0627\u0644\u0645\u0627\u0644\u064A \u0627\u0644\u0631\u0642\u0645\u064A \u0627\u0644\u0634\u0627\u0645\u0644
+    \u0627\u0644\u062D\u0635\u0631\u064A \u0644\u0634\u0631\u0643\u0629 \u0627\u0644\u0641\u0631\u062F\u0627\u0646
+    \u0644\u0644\u0635\u0631\u0627\u0641\u0629\u060C \u0645\u0635\u0645\u0651\u0645
+    \u0644\u062C\u0639\u0644 \u0625\u0631\u0633\u0627\u0644 \u0627\u0644\u0623\u0645\u0648\u0627\u0644
+    \u0648\u0625\u062F\u0627\u0631\u0629 \u0627\u0644\u0645\u062F\u0641\u0648\u0639\u0627\u062A
+    \u0648\u0627\u0644\u0648\u0635\u0648\u0644 \u0625\u0644\u0649 \u0627\u0644\u062E\u062F\u0645\u0627\u062A
+    \u0627\u0644\u0645\u0627\u0644\u064A\u0629 \u0623\u0645\u0631\u064B\u0627 \u0628\u0633\u064A\u0637\u064B\u0627
+    \u0648\u0622\u0645\u0646\u064B\u0627 \u0648\u0633\u0631\u064A\u0639\u064B\u0627.
+    \u0641\u0645\u0646 \u062A\u062D\u0648\u064A\u0644 \u0627\u0644\u0623\u0645\u0648\u0627\u0644
+    \u0648\u062F\u0641\u0639 \u0627\u0644\u0641\u0648\u0627\u062A\u064A\u0631 \u0625\u0644\u0649
+    \u062A\u062A\u0628\u0639 \u0627\u0644\u0645\u0639\u0627\u0645\u0644\u0627\u062A
+    \u0627\u0644\u0645\u0627\u0644\u064A\u0629\u060C \u064A\u0636\u0639 AlfaPay \u0643\u0644
+    \u0645\u0627 \u062A\u062D\u062A\u0627\u062C\u0647 \u0641\u064A \u0645\u0646\u0635\u0629
+    \u0648\u0627\u062D\u062F\u0629 \u0633\u0647\u0644\u0629 \u0627\u0644\u0627\u0633\u062A\u062E\u062F\u0627\u0645.\r\n\r\n\u062D\u062F\u062B\u0646\u064A
+    \u0639\u0646 \u0646\u0641\u0633\u0643\r\n\r\n\u0641\u0643\u0631 \u0628\u064A
+    \u0643\u0645\u0633\u0627\u0639\u062F\u0643 \u0627\u0644\u0630\u0643\u064A\u060C
+    \u062F\u0627\u0626\u0645\u064B\u0627 \u0645\u062A\u0627\u062D\u060C \u062F\u0627\u0626\u0645\u064B\u0627
+    \u0645\u0633\u062A\u0639\u062F. \u0623\u0646\u0627 \u0647\u0646\u0627 \u0639\u0644\u0649
+    \u0645\u062F\u0627\u0631 \u0627\u0644\u0633\u0627\u0639\u0629 \u0644\u0645\u0633\u0627\u0639\u062F\u062A\u0643
+    \u0641\u064A \u0625\u0631\u0633\u0627\u0644 \u0627\u0644\u0623\u0645\u0648\u0627\u0644\u060C
+    \u0648\u0627\u0644\u062A\u062D\u0642\u0642 \u0645\u0646 \u0623\u0633\u0639\u0627\u0631
+    \u0627\u0644\u0635\u0631\u0641\u060C \u0648\u0627\u0644\u0625\u062C\u0627\u0628\u0629
+    \u0639\u0644\u0649 \u0623\u0633\u0626\u0644\u062A\u0643\u060C \u0648\u062A\u0648\u062C\u064A\u0647\u0643
+    \u062E\u0644\u0627\u0644 \u062C\u0645\u064A\u0639 \u0627\u0644\u062E\u062F\u0645\u0627\u062A
+    \u0627\u0644\u062A\u064A \u064A\u0642\u062F\u0645\u0647\u0627 AlfaPay. \u0643\u0645\u0627
+    \u0623\u0646\u0646\u064A \u0623\u062A\u062D\u062F\u062B \u0623\u0643\u062B\u0631
+    \u0645\u0646 50 \u0644\u063A\u0629 \u0644\u0644\u062A\u0623\u0643\u062F \u0645\u0646
+    \u0623\u0646\u0643 \u062A\u0634\u0639\u0631 \u0628\u0623\u0646\u0643 \u0645\u0641\u0647\u0648\u0645
+    \u0641\u064A \u0643\u0644 \u062E\u0637\u0648\u0629.\r\n\r\n\u0643\u064A\u0641
+    \u064A\u0645\u0643\u0646\u0646\u064A \u0625\u0631\u0633\u0627\u0644 \u0627\u0644\u0623\u0645\u0648\u0627\u0644
+    \u0628\u0627\u0633\u062A\u062E\u062F\u0627\u0645 AlfaPay\u061F\r\n\u0625\u0631\u0633\u0627\u0644
+    \u0627\u0644\u0623\u0645\u0648\u0627\u0644 \u0628\u0627\u0633\u062A\u062E\u062F\u0627\u0645
+    AlfaPay \u0633\u0647\u0644 \u0644\u0644\u063A\u0627\u064A\u0629. \u0643\u0644
+    \u0645\u0627 \u0639\u0644\u064A\u0643 \u0647\u0648 \u0641\u062A\u062D \u0627\u0644\u062A\u0637\u0628\u064A\u0642\u060C
+    \u0648\u0627\u062E\u062A\u064A\u0627\u0631 \u0627\u0644\u062F\u0648\u0644\u0629
+    \u0627\u0644\u0648\u062C\u0647\u0629\u060C \u0648\u0625\u062F\u062E\u0627\u0644
+    \u0627\u0644\u0645\u0628\u0644\u063A\u060C \u0648\u0627\u062E\u062A\u064A\u0627\u0631
+    \u0627\u0644\u0645\u0633\u062A\u0641\u064A\u062F \u0648\u0627\u062E\u062A\u064A\u0627\u0631
+    \u0637\u0631\u064A\u0642\u0629 \u0627\u0644\u062F\u0641\u0639 \u0627\u0644\u0645\u0641\u0636\u0644\u0629
+    \u0644\u062F\u064A\u0643. \u062D\u064A\u062B \u0633\u062A\u0646\u062A\u0642\u0644
+    \u0623\u0645\u0648\u0627\u0644\u0643 \u0639\u0644\u0649 \u0627\u0644\u0641\u0648\u0631\u060C
+    \u0628\u0623\u0645\u0627\u0646 \u0648\u0645\u0648\u062B\u0648\u0642\u064A\u0629.\r\n\r\n\u0647\u0644
+    \u064A\u0645\u0643\u0646\u0646\u064A \u0625\u0631\u0633\u0627\u0644 \u0627\u0644\u0623\u0645\u0648\u0627\u0644
+    \u0625\u0644\u0649 \u0623\u064A \u062F\u0648\u0644\u0629\u061F\r\n\u0646\u0639\u0645!
+    \u064A\u062A\u064A\u062D \u0644\u0643 AlfaPay \u0625\u0631\u0633\u0627\u0644
+    \u0627\u0644\u0623\u0645\u0648\u0627\u0644 \u0625\u0644\u0649 \u0623\u0643\u062B\u0631
+    \u0645\u0646 190 \u062F\u0648\u0644\u0629\u060C \u0645\u0628\u0627\u0634\u0631\u0629
+    \u0625\u0644\u0649 \u0627\u0644\u062D\u0633\u0627\u0628\u0627\u062A \u0627\u0644\u0628\u0646\u0643\u064A\u0629
+    \u0623\u0648 \u0627\u0644\u0645\u062D\u0627\u0641\u0638 \u0627\u0644\u0645\u062A\u0646\u0642\u0644\u0629
+    \u0623\u0648 \u0645\u0648\u0627\u0642\u0639 \u0635\u0631\u0641 \u0627\u0644\u0646\u0642\u062F.\r\n\r\n\u0645\u0627\u0630\u0627
+    \u064A\u0645\u0643\u0646\u0646\u064A \u0623\u0646 \u0623\u0641\u0639\u0644 \u0623\u064A\u0636\u064B\u0627
+    \u0628\u0627\u0633\u062A\u062E\u062F\u0627\u0645 AlfaPay\u061F\r\n\r\n \u064A\u062A\u062C\u0627\u0648\u0632
+    AlfaPay \u0645\u062C\u0631\u062F \u062A\u062D\u0648\u064A\u0644 \u0627\u0644\u0623\u0645\u0648\u0627\u0644\u061B
+    \u062D\u064A\u062B \u064A\u0645\u0643\u0646\u0643 \u062F\u0641\u0639 \u0627\u0644\u0641\u0648\u0627\u062A\u064A\u0631\u060C
+    \u0648\u0645\u0631\u0627\u0642\u0628\u0629 \u0643\u0644 \u0645\u0639\u0627\u0645\u0644\u0629
+    \u0641\u064A \u0627\u0644\u0648\u0642\u062A \u0627\u0644\u0641\u0639\u0644\u064A\u060C
+    \u0648\u0625\u062F\u0627\u0631\u0629 \u0628\u0637\u0627\u0642\u0627\u062A Travelez
+    \u0648WPS \u0627\u0644\u062E\u0627\u0635\u0629 \u0628\u0643. \u064A\u0642\u062F\u0645
+    AlfaPay \u0645\u062C\u0645\u0648\u0639\u0629 \u0645\u0646 \u0627\u0644\u0645\u0646\u062A\u062C\u0627\u062A
+    \u0648\u0627\u0644\u062E\u062F\u0645\u0627\u062A \u0627\u0644\u0645\u0635\u0645\u0645\u0629
+    \u0644\u062C\u0639\u0644 \u062D\u064A\u0627\u062A\u0643 \u0627\u0644\u0645\u0627\u0644\u064A\u0629
+    \u0623\u0643\u062B\u0631 \u0628\u0633\u0627\u0637\u0629 \u0648\u0630\u0643\u0627\u0621.\r\n"
 --- !u!1 &22063377
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,11 +376,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 422217727}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1298.159, y: 161.18701}
-  m_Pivot: {x: 0.5, y: 1}
+  m_SizeDelta: {x: 822.8596, y: 337.03}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &22063379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,8 +428,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -390,9 +558,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1897360025}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.19043705, y: 0.63774}
-  m_AnchorMax: {x: 0.19043705, y: 0.63774}
-  m_AnchoredPosition: {x: 10, y: -52.456}
+  m_AnchorMin: {x: 0.5, y: 0.60700005}
+  m_AnchorMax: {x: 0.5, y: 0.60700005}
+  m_AnchoredPosition: {x: 32, y: 82.039795}
   m_SizeDelta: {x: 540.958, y: 520.21}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &122083555
@@ -468,7 +636,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 97, y: -44}
+  m_AnchoredPosition: {x: 28, y: -44}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &156534534
@@ -811,6 +979,7 @@ MonoBehaviour:
   gptAnswer: {fileID: 2088463693}
   speechOutput: {fileID: 22063379}
   gptAnswerTextpad: {fileID: 1128017297}
+  audioSource: {fileID: 1338224454}
 --- !u!1 &245791180
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,9 +1013,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1897360025}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.6822602}
-  m_AnchorMax: {x: 0, y: 0.6822602}
-  m_AnchoredPosition: {x: 380.97913, y: -61.18692}
+  m_AnchorMin: {x: 0.54539585, y: 0.63478804}
+  m_AnchorMax: {x: 0.54539585, y: 0.63478804}
+  m_AnchoredPosition: {x: -72.020874, y: 19.852875}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &245791182
@@ -895,7 +1064,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 15602046}
         m_TargetAssemblyTypeName: GPTQuery, Assembly-CSharp
-        m_MethodName: AskQuestionInEnglish
+        m_MethodName: AskQuestion
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1100,6 +1269,18 @@ MonoBehaviour:
       - m_Target: {fileID: 236483405}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: ClearText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 246351219}
+        m_TargetAssemblyTypeName: OpenAITTS, Assembly-CSharp
+        m_MethodName: CancelCurrentTTS
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1474,6 +1655,7 @@ RectTransform:
   - {fileID: 156534533}
   - {fileID: 2013099097}
   - {fileID: 22063378}
+  - {fileID: 2088463695}
   m_Father: {fileID: 1315702003}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1669,9 +1851,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1897360025}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5583342}
-  m_AnchorMax: {x: 0, y: 0.5583342}
-  m_AnchoredPosition: {x: 381.0141, y: -89.99994}
+  m_AnchorMin: {x: 0.54539585, y: 0.5}
+  m_AnchorMax: {x: 0.54539585, y: 0.5}
+  m_AnchoredPosition: {x: -71.98596, y: 3.039856}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &472337485
@@ -1720,7 +1902,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 15602046}
         m_TargetAssemblyTypeName: GPTQuery, Assembly-CSharp
-        m_MethodName: AskQuestionInEnglish
+        m_MethodName: AskQuestion
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1873,9 +2055,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1897360025}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.42618608}
-  m_AnchorMax: {x: 0, y: 0.42618608}
-  m_AnchoredPosition: {x: 380.99695, y: -79.99994}
+  m_AnchorMin: {x: 0.54539585, y: 0.39167282}
+  m_AnchorMax: {x: 0.54539585, y: 0.39167282}
+  m_AnchoredPosition: {x: -72.00305, y: -12.960144}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &540106037
@@ -1924,7 +2106,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 15602046}
         m_TargetAssemblyTypeName: GPTQuery, Assembly-CSharp
-        m_MethodName: AskQuestionInEnglish
+        m_MethodName: AskQuestion
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2510,6 +2692,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 236483405}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: StopAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1967135986}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -2906,6 +3100,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 236483405}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: StopAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1967135986}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -3200,6 +3406,18 @@ MonoBehaviour:
       - m_Target: {fileID: 236483405}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: ClearText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 236483405}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: StopAudio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3856,6 +4074,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 236483405}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: StopAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1967135986}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -4117,6 +4347,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 236483405}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: StopAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1967135986}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -4199,11 +4441,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1310007263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.6436044, y: 0.587}
-  m_AnchorMax: {x: 0.6436044, y: 0.587}
-  m_AnchoredPosition: {x: -156, y: 135}
-  m_SizeDelta: {x: 675.709, y: 226.06}
-  m_Pivot: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 1, y: 0.63485193}
+  m_AnchorMax: {x: 1, y: 0.63485193}
+  m_AnchoredPosition: {x: -1002.45703, y: 210.32947}
+  m_SizeDelta: {x: 1000.0454, y: 329.2567}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &1128017297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4224,17 +4466,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: I'm sorry, but your question does not seem to be related to the provided
+    content. Could you please provide more context?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d9ca3b3ff620fe14c8fecf2495aa0048, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 4558447646738584054, guid: d9ca3b3ff620fe14c8fecf2495aa0048, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4283886631
+  m_fontColor: {r: 0.15294118, g: 0.9254902, b: 0.3372549, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4287,10 +4530,10 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 31.580078, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1128017298
@@ -4498,6 +4741,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ab297d89ce851b643bd7bdd198c3a989, type: 3}
       propertyPath: m_Name
       value: Chatbot_V07
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ab297d89ce851b643bd7bdd198c3a989, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5071,6 +5318,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 246351219}
+        m_TargetAssemblyTypeName: OpenAITTS, Assembly-CSharp
+        m_MethodName: CancelCurrentTTS
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1310007262}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -5229,9 +5488,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1897360025}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.924}
-  m_AnchorMax: {x: 0, y: 0.924}
-  m_AnchoredPosition: {x: 380.99695, y: -24.039795}
+  m_AnchorMin: {x: 0.54539585, y: 0.8813687}
+  m_AnchorMax: {x: 0.54539585, y: 0.8813687}
+  m_AnchoredPosition: {x: -72.00305, y: 52}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1467232555
@@ -5280,7 +5539,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 15602046}
         m_TargetAssemblyTypeName: GPTQuery, Assembly-CSharp
-        m_MethodName: AskQuestionInEnglish
+        m_MethodName: AskQuestion
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5364,7 +5623,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 37}
+  m_AnchoredPosition: {x: -69, y: 37}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1525365435
@@ -5420,7 +5679,8 @@ MonoBehaviour:
   micButton: {fileID: 1525365434}
   timerText: {fileID: 156534534}
   slideToCancelText: {fileID: 2013099098}
-  audioSource: {fileID: 0}
+  GPTanswer: {fileID: 2088463693}
+  audioSource: {fileID: 1338224454}
 --- !u!1 &1548227814
 GameObject:
   m_ObjectHideFlags: 0
@@ -5606,7 +5866,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 172, y: 37}
+  m_AnchoredPosition: {x: 103, y: 37}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1616859141
@@ -5718,6 +5978,18 @@ MonoBehaviour:
       - m_Target: {fileID: 236483405}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: ClearText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 246351219}
+        m_TargetAssemblyTypeName: OpenAITTS, Assembly-CSharp
+        m_MethodName: CancelCurrentTTS
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6383,7 +6655,6 @@ RectTransform:
   - {fileID: 472337484}
   - {fileID: 540106036}
   - {fileID: 256983516}
-  - {fileID: 2088463695}
   m_Father: {fileID: 1315702003}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -6569,7 +6840,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.36600003, y: 0}
   m_AnchorMax: {x: 0.36600003, y: 0}
-  m_AnchoredPosition: {x: -6, y: 74}
+  m_AnchoredPosition: {x: -75, y: 74}
   m_SizeDelta: {x: 259.6935, y: 50}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &2013099098
@@ -6822,14 +7093,14 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d9ca3b3ff620fe14c8fecf2495aa0048, type: 2}
-  m_sharedMaterial: {fileID: -3327665654528483023, guid: 37e24941f24216745995bcb7ac760b98, type: 2}
+  m_sharedMaterial: {fileID: 4558447646738584054, guid: d9ca3b3ff620fe14c8fecf2495aa0048, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4283886631
+  m_fontColor: {r: 0.15263437, g: 0.9245283, b: 0.33595914, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6846,8 +7117,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6885,7 +7156,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2088463694
@@ -6908,13 +7179,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1897360025}
+  m_Father: {fileID: 422217727}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.6436044, y: 0.587}
-  m_AnchorMax: {x: 0.6436044, y: 0.587}
-  m_AnchoredPosition: {x: -145, y: 272}
-  m_SizeDelta: {x: 626.636, y: 459.358}
-  m_Pivot: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 796.4128, y: 337.03}
+  m_Pivot: {x: 1, y: 1}
 --- !u!1 &2097558399
 GameObject:
   m_ObjectHideFlags: 0
@@ -6948,9 +7219,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1897360025}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.8055561}
-  m_AnchorMax: {x: 0, y: 0.8055561}
-  m_AnchoredPosition: {x: 380.99695, y: -58.67691}
+  m_AnchorMin: {x: 0.54539585, y: 0.75363135}
+  m_AnchorMax: {x: 0.54539585, y: 0.75363135}
+  m_AnchoredPosition: {x: -72.00305, y: 27.362885}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2097558401
@@ -6999,7 +7270,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 15602046}
         m_TargetAssemblyTypeName: GPTQuery, Assembly-CSharp
-        m_MethodName: AskQuestionInEnglish
+        m_MethodName: AskQuestion
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
