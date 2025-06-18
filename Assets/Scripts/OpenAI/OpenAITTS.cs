@@ -12,6 +12,8 @@ public class OpenAITTS : MonoBehaviour
     public string openAIKey;
     public AudioSource audioSource;
 
+    public AnimationManager animManager;
+
     // Track the current TTS request to cancel if needed
     private Coroutine currentTTSRequest = null;
     private UnityWebRequest activeRequest = null;
@@ -137,6 +139,7 @@ public class OpenAITTS : MonoBehaviour
 
 #if UNITY_WEBGL && !UNITY_EDITOR
                 PlayAudioInWebGL(mp3Data);
+                animManager.EnableTalkSequence();
 #else
                 StartCoroutine(PlayMp3Fallback(mp3Data));
 #endif
@@ -156,6 +159,7 @@ public class OpenAITTS : MonoBehaviour
     [System.Runtime.InteropServices.DllImport("__Internal")]
     private static extern void PlayAudioFromBase64JS(string base64Data);
 #endif
+
 
     // Fallback method for Android/iOS/Desktop
     IEnumerator PlayMp3Fallback(byte[] data)
@@ -184,6 +188,10 @@ public class OpenAITTS : MonoBehaviour
                 AudioClip clip = DownloadHandlerAudioClip.GetContent(www);
                 audioSource.clip = clip;
                 audioSource.Play();
+                animManager.EnableTalkSequence();
+
+                yield return new WaitForSeconds(clip.length); // Wait for audio to finish playing
+                animManager.ResetTalk();
             }
             else
             {

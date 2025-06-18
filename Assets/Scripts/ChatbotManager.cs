@@ -10,7 +10,7 @@ public class ChatbotManager : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(TriggerChatbotGreeting());
+       // StartCoroutine(TriggerChatbotGreeting());
     }
 
     IEnumerator TriggerChatbotGreeting()

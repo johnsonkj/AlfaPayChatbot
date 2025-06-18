@@ -14,6 +14,7 @@ public class VoiceRecordUI : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
     public TextMeshProUGUI slideToCancelText;
     public TextMeshProUGUI GPTanswer;
     public AudioSource audioSource;
+    public AnimationManager animManager;
 
     private float holdTime;
     private bool isRecording = false;
@@ -99,6 +100,7 @@ public class VoiceRecordUI : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        animManager.ResetTalk();
         initialTouchPosition = eventData.position;
         isRecording = true;
 
@@ -111,7 +113,7 @@ public class VoiceRecordUI : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
         timerText.gameObject.SetActive(true);
         slideToCancelText.gameObject.SetActive(true);
         timerCoroutine = StartCoroutine(StartTimer());
-
+        
         StartCoroutine(DelayedStartRecording());
     }
 
