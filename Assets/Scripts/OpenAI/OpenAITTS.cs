@@ -51,7 +51,6 @@ public class OpenAITTS : MonoBehaviour
     {
         // Cancel any existing TTS request
         CancelCurrentTTS();
-
         // Start a new TTS request
         currentTTSRequest = StartCoroutine(SendTextToTTS(text));
     }
@@ -67,6 +66,7 @@ public class OpenAITTS : MonoBehaviour
             audioSource.Stop();
         }
 
+        animManager.TriggerCharlieTalkAnimation(false);
         // Cancel any in-progress web request
         if (activeRequest != null)
         {
@@ -84,9 +84,18 @@ public class OpenAITTS : MonoBehaviour
         Debug.Log("Canceled previous TTS request");
     }
 
+    public float EstimateSpeechDuration(string text)
+    {
+        int wordCount = text.Split(' ').Length;
+
+        float wordsPerSecond = 2.5f; // average speaking rate
+        return wordCount / wordsPerSecond;
+    }
+
     IEnumerator SendTextToTTS(string inputText)
     {
         Debug.Log("Sending text to OpenAI TTS: " + inputText);
+        Debug.Log("Audio duration " + EstimateSpeechDuration(inputText));
         string uri = "https://api.openai.com/v1/audio/speech";
 
         string lang = LanguageSelector.selectedLanguageCode;
@@ -139,12 +148,20 @@ public class OpenAITTS : MonoBehaviour
 
 #if UNITY_WEBGL && !UNITY_EDITOR
                 PlayAudioInWebGL(mp3Data);
-                animManager.EnableTalkSequence();
+                animManager.TriggerCharlieTalkAnimation(true);
+                float duration = EstimateSpeechDuration(inputText);
+                StartCoroutine(StopTalkingAfterDelay(duration));
 #else
                 StartCoroutine(PlayMp3Fallback(mp3Data));
 #endif
             }
         }
+    }
+
+    IEnumerator StopTalkingAfterDelay(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        animManager.TriggerCharlieTalkAnimation(false);
     }
 
 #if UNITY_WEBGL && !UNITY_EDITOR
@@ -187,11 +204,13 @@ public class OpenAITTS : MonoBehaviour
             {
                 AudioClip clip = DownloadHandlerAudioClip.GetContent(www);
                 audioSource.clip = clip;
+                animManager.TriggerCharlieTalkAnimation(true);
                 audioSource.Play();
-                animManager.EnableTalkSequence();
+                //animManager.EnableTalkSequence();
 
                 yield return new WaitForSeconds(clip.length); // Wait for audio to finish playing
-                animManager.ResetTalk();
+                animManager.TriggerCharlieTalkAnimation(false);
+                //animManager.ResetTalk();
             }
             else
             {

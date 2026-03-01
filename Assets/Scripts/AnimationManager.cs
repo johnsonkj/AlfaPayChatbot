@@ -12,6 +12,7 @@ public class AnimationManager : MonoBehaviour
     public GameObject talkRobot;
     public GameObject peepRobot;
     public Animator talkController;
+    public Animator CharlieKirkController;
 
     public float idleTimeThreshold = 15f;
 
@@ -19,17 +20,17 @@ public class AnimationManager : MonoBehaviour
     private float lastInputTime;
     private void Awake()
     {
-        DisableRobots();
+       // DisableRobots();
     }
     void Start()
     {
-        lastInputTime = Time.time;
-        flyingCoroutine = StartCoroutine(PlayFlyingSequence());
+        /*lastInputTime = Time.time;
+        flyingCoroutine = StartCoroutine(PlayFlyingSequence());*/
     }
 
     void Update()
     {
-        // Check for touch or mouse click
+       /* // Check for touch or mouse click
         if (Input.touchCount > 0 || Input.GetMouseButtonDown(0))
         {
             lastInputTime = Time.time;
@@ -42,7 +43,7 @@ public class AnimationManager : MonoBehaviour
             {
                 EnablePeep();
             }   
-        }
+        }*/
     }
 
     IEnumerator PlayFlyingSequence()
@@ -88,5 +89,10 @@ public class AnimationManager : MonoBehaviour
     {
         DisableRobots();
         peepRobot.SetActive(true);
+    }
+
+    public void TriggerCharlieTalkAnimation(bool value)
+    {
+        CharlieKirkController.SetBool("Talk",value);
     }
 }
