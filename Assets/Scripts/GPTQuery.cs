@@ -19,7 +19,7 @@ public class GPTQuery : MonoBehaviour
     private void Awake()
     {
         //openAIKey = KeyManager.GetApiKey();
-        openAIKey = "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";
+      //  openAIKey = "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";
     }
 
     public void AskQuestion(string question)

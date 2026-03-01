@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3cae4014aceda14da38069516e45369, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  openAIKey: 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
+  openAIKey: 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
   tts: {fileID: 246351219}
   GPTanswer: {fileID: 2088463693}
   gptanswerTextPad: {fileID: 1128017297}
@@ -523,7 +523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gptQuery: {fileID: 15602046}
-  openAIKey: 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
+  openAIKey: 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
   whisperModel: whisper-1
   recognizedSpeech: {fileID: 22063379}
 --- !u!1001 &120499204
@@ -1984,7 +1984,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da89b698e4c6e464a98219ace2b7321b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  openAIKey: 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
+  openAIKey: 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
   audioSource: {fileID: 1338224454}
   animManager: {fileID: 1492888161}
 --- !u!1 &256983515
