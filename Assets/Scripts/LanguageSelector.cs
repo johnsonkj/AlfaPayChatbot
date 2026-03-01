@@ -14,6 +14,10 @@ public class LanguageSelector : MonoBehaviour
     public delegate void LanguageSelectedEvent(string languageCode);
     public static event LanguageSelectedEvent OnLanguageSelected;
 
+    private void Awake()
+    {
+        SetLanguage("en");
+    }
     void Start()
     {
         englishButton.onClick.AddListener(() => SetLanguage("en"));

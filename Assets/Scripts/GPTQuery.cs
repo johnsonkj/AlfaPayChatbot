@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine.Networking;
 using System.Text;
 using Newtonsoft.Json.Linq;
@@ -9,58 +8,39 @@ using TMPro;
 public class GPTQuery : MonoBehaviour
 {
     public string openAIKey;
-    public OpenAITTS tts;
     public TextMeshProUGUI GPTanswer;
     public TextMeshProUGUI gptanswerTextPad;
 
-    [TextArea(15, 30)]
-    public string predefinedContent = ""; // All predefined content pasted here
-
     private void Awake()
     {
-        //openAIKey = KeyManager.GetApiKey();
-      //  openAIKey = "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";
+        // ⚠️ In production WebGL, do NOT expose API key in client
+        // openAIKey = KeyManager.GetApiKey();
     }
 
     public void AskQuestion(string question)
     {
-        string userLanguageCode = LanguageSelector.selectedLanguageCode;
-        Debug.Log($"Processing question in {GetLanguageName(userLanguageCode)}: {question}");
-
-        // Simple prompt for GPT to find answer in the predefined content
-        string prompt = $@"
-You are a helpful assistant for AlfaPay, a financial app by Al Fardan Exchange. 
-
-TASK:
-1. The user has asked: {question}
-2.Check if an answer exists in the predefined content below.
-3.If you find an answer in the section for { GetLanguageName(userLanguageCode)}, respond with EXACTLY that answer.
-4.If you don't find a match in {GetLanguageName(userLanguageCode)} but find it in ENGLISH, translate the English answer to {GetLanguageName(userLanguageCode)}.
-5.If no answer exists in any language section, briefly answer based on your knowledge of financial apps.
-6.Respond ONLY in { GetLanguageName(userLanguageCode)}.
-7.Do not include phrases like Based on the content or explain your process.
-
-PREDEFINED CONTENT: {predefinedContent} ";
-
-        StartCoroutine(SendToGPT(prompt));
+        Debug.Log("User question: " + question);
+        StartCoroutine(SendToGPT(question));
     }
 
-    IEnumerator SendToGPT(string prompt)
+    IEnumerator SendToGPT(string userQuestion)
     {
-        string apiUrl = "https://api.openai.com/v1/chat/completions";
+        string apiUrl = "https://api.openai.com/v1/responses";
 
+        string language = GetLanguageName(LanguageSelector.selectedLanguageCode);
+
+        // ✅ SIMPLE & RELIABLE FORMAT (matches Postman)
         JObject jsonBody = new JObject
         {
-            ["model"] = "gpt-4",
-            ["temperature"] = 0.2, // Lower temperature for more deterministic responses
-            ["messages"] = new JArray
-            {
-                new JObject
-                {
-                    ["role"] = "user",
-                    ["content"] = prompt
-                }
-            }
+            ["model"] = "gpt-4.1",
+
+            ["input"] =
+            $@"Answer the following question in the speaking style of Charlie Kirk.
+Speak confidently, directly, and conversationally like a political commentator.
+Do NOT say you are an AI or roleplaying.
+Respond ONLY in {language}.
+
+Question: {userQuestion}"
         };
 
         byte[] bodyRaw = Encoding.UTF8.GetBytes(jsonBody.ToString());
@@ -68,6 +48,7 @@ PREDEFINED CONTENT: {predefinedContent} ";
         UnityWebRequest request = new UnityWebRequest(apiUrl, "POST");
         request.uploadHandler = new UploadHandlerRaw(bodyRaw);
         request.downloadHandler = new DownloadHandlerBuffer();
+
         request.SetRequestHeader("Authorization", $"Bearer {openAIKey}");
         request.SetRequestHeader("Content-Type", "application/json");
 
@@ -81,23 +62,29 @@ PREDEFINED CONTENT: {predefinedContent} ";
         else
         {
             string reply = ExtractReply(request.downloadHandler.text);
+
             GPTanswer.text = reply;
             gptanswerTextPad.text = reply;
+
             Debug.Log("GPT Answer: " + reply);
+
+            // 🔊 Send to Text-to-Speech
             OpenAITTS.Instance.SpeakText(reply);
         }
     }
 
+    // ✅ Correct parsing for Responses API
     string ExtractReply(string json)
     {
         try
         {
             JObject jObject = JObject.Parse(json);
-            return jObject["choices"][0]["message"]["content"].ToString();
+            return jObject["output"][0]["content"][0]["text"].ToString();
         }
         catch
         {
-            return "Error parsing GPT response.";
+            Debug.LogError("Error parsing GPT response.");
+            return "Sorry, I couldn't understand that.";
         }
     }
 

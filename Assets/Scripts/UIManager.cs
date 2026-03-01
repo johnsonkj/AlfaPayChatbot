@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -11,6 +12,11 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI speechOutput;
     public TextMeshProUGUI gptAnswerTextpad;
     public AudioSource audioSource;
+    public GameObject GPTAnswer;
+
+    public Image HideAnswerArrowImage;   // UI Image to change
+    public Sprite rightArrowSprite;      // e.g., 
+    public Sprite downArrowSprite;
 
     public void SubmitToGPTQuery()
     {
@@ -40,4 +46,9 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    public void OnToggleAnswerClick()
+    { 
+        GPTAnswer.SetActive(!GPTAnswer.activeSelf);
+        HideAnswerArrowImage.sprite = GPTAnswer.activeSelf ? downArrowSprite: rightArrowSprite;
+    }
 }
