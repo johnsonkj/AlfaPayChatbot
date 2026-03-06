@@ -100,7 +100,7 @@ public class VoiceRecordUI : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        animManager.ResetTalk();
+       
         initialTouchPosition = eventData.position;
         isRecording = true;
 

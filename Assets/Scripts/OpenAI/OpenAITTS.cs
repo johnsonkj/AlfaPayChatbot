@@ -21,7 +21,7 @@ public class OpenAITTS : MonoBehaviour
     // OpenAI tts-1 model voices
     private Dictionary<string, string> voiceMap = new Dictionary<string, string>
     {
-        { "en", "alloy" },     // English
+        { "en", "onyx" },     // English
         { "hi", "echo" },      // Hindi (closest match)
         { "ar", "fable" },     // Arabic (closest match)
         { "zh", "onyx" },      // Mandarin (closest match)

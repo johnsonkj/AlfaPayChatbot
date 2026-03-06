@@ -62,7 +62,7 @@ public class OpenAISTT : MonoBehaviour
         // Always translate audio into English
         form.AddField("language", "en");
 
-        using (UnityWebRequest www = UnityWebRequest.Post("https://api.openai.com/v1/audio/translations", form))
+        using (UnityWebRequest www = UnityWebRequest.Post("https://api.openai.com/v1/audio/transcriptions", form))
         {
             www.SetRequestHeader("Authorization", $"Bearer {openAIKey}");
             yield return www.SendWebRequest();
